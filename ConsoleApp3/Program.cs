@@ -104,7 +104,7 @@ namespace Blackjack
                                         Console.WriteLine("Ni fick samma poäng, tyvärr vann ingen");
                                     }
 
-                                    if (datornsPoäng >= 22)
+                                    if (datornsPoäng > 21)
                                     {
                                         Console.WriteLine("Grattis, du vann mot datorn");
                                         Console.WriteLine("Skriv in ditt namn nedan så syns du som den senaste vinnaren:\n");
@@ -115,7 +115,7 @@ namespace Blackjack
                                     }
 
                                     //Förlust när datorn har mer dig men under 21
-                                    if (datornsPoäng > spelarensPoäng && datornsPoäng <= 21)
+                                    if (datornsPoäng > spelarensPoäng && datornsPoäng < 22)
                                         Console.WriteLine("Du har tyvärr förlorat mot datorn");
                                     break;
     
