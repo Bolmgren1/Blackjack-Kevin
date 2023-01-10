@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace Blackjack
@@ -46,7 +46,7 @@ namespace Blackjack
 
                             Console.WriteLine("Datorns poäng är:" + " " + datornsPoäng);
                             Console.WriteLine("Dina poäng är:" + " " + spelarensPoäng);
-                            Console.WriteLine("Vill du dra ett till kort? svara med y eller n.");
+                            Console.WriteLine("Vill du ta ett till kort? svara med y eller n.");
                             
                             spelareKort = Console.ReadLine();
 
@@ -116,7 +116,7 @@ namespace Blackjack
 
                                     //Förlust när datorn har mer dig men under 21
                                     if (datornsPoäng > spelarensPoäng && datornsPoäng < 22)
-                                        Console.WriteLine("Du har tyvärr förlorat mot datorn");
+                                        Console.WriteLine("Du har tyvärr förlorat mot datorn \n");
                                     break;
     
                             }
